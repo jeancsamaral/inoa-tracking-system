@@ -1,0 +1,19 @@
+<!-- templates/stocks/stock_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Data</title>
+</head>
+<body>
+    <h1>Stock Information</h1>
+    <ul>
+        {% if stocks %}
+            {% for stock in stocks %}
+                <li>{{ stock.symbol }}: ${{ stock.price }}</li>
+            {% endfor %}
+        {% else %}
+            <li>No stock data available.</li>
+        {% endif %}
+    </ul>
+</body>
+</html>
