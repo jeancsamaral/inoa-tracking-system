@@ -2,6 +2,12 @@
 
 This is the backend of the Stock Monitoring and Alert System, developed using Django. It handles API endpoints, database management, and business logic.
 
+## Real-Time Stock Data with Polygon.io
+
+To obtain real-time stock data, it's necessary to use the Advanced plan of the Polygon.io API. However, for educational and development purposes, we have opted to use the free plan, which updates the stock information database daily. Although requests are made every 60 seconds, the stock quotes may not reflect the current market price in real-time with the free plan.
+
+We chose the Polygon.io API due to its extensive range of easily manipulable data, including detailed historical price records. This data is particularly useful for building charts and applying more complex mathematical models in financial and market analysis. This flexibility and richness of information make the API an excellent choice for developing applications and for learning about financial data analysis.
+
 ## Table of Contents
 
 1. [Folder Structure](#folder-structure)
