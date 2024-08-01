@@ -1,4 +1,4 @@
-# inoa_tracking/urls.py
+# track-config/urls.py
 from django.contrib import admin
 from django.urls import path, include
 from stocks.views import StockListAPIView, stock_data_view

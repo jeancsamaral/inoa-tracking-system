@@ -27,11 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-CELERY_BROKER_URL = 'memory://localhost/'
-CELERY_RESULT_BACKEND = 'django-db'
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_TASK_SERIALIZER = 'json'
-
 
 # Application definition
 
@@ -45,9 +40,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'stocks',
-    'django_celery_beat',
-    'django_celery_results',
-    'anymail',
 ]
 
 ANYMAIL = {
@@ -90,7 +82,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = False
-ROOT_URLCONF = 'inoa_tracking.urls'
+ROOT_URLCONF = 'track-config.urls'
 
 TEMPLATES = [
     {
@@ -108,7 +100,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'inoa_tracking.wsgi.application'
+WSGI_APPLICATION = 'track-config.wsgi.application'
 
 
 # Database
